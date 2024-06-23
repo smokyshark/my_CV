@@ -88,6 +88,84 @@ main {
   color: #A7B8BF;
 }
 
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.skills .column {
+  -ms-flex: 0 0 50%%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+ul {
+  margin: 0;
+}
+
+ul.list-dashed {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.list-dashed > li {
+  padding-left: 1.5em;
+}
+
+ul.list-dashed > li:before {
+  display: inline-block;		
+  width: 0; 		
+  height: 0; 	
+  border-top: solid transparent;
+  border-bottom: solid transparent;
+  border-left: solid turquoise;	
+  border-width:	5px;
+  content: ' ';
+  margin-right: 5px;
+}
+
+i.flag-pl:before, i.flag-poland:before {
+  background-position: -72px -572px !important;
+}
+i.flag::before {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  content: "";
+  background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+i.flag:not(.icon) {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin: 0 .5em 0 0;
+  line-height: 11px;
+  text-decoration: inherit;
+  vertical-align: baseline;
+  backface-visibility: hidden;
+}
+i.flag-de:before, i.flag-germany:before {
+  background-position: 0 -1430px !important;
+}
+i.flag-gb:before, i.flag-uk:before, i.flag-united-kingdom:before {
+  background-position: -36px -26px !important;
+}
+i.flag::before {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  content: "";
+  background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 footer {
  padding: 1em;
 }
