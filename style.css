@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.8em;
   font-family: 'Raleway', sans-serif;
+
 }
 
 article {
@@ -52,22 +53,23 @@ h3 {
 
 a {
   text-decoration: none;
-  color: olivedrab;
+  color: #1C9C94;
 }
 
 a:hover {
   text-decoration: underline;
+  opacity: 0.5;
 }
 
 main {
   max-width: 1140px;
-  border-bottom: solid;
 }
 
 
 .course {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .course .title {
@@ -81,11 +83,13 @@ main {
   flex: 0 0 66.6%;
   max-width: 66.6%
 }
+
 .course .descrition p{
   padding-left: 1em;
 }
+
 .school span {
-  color: #A7B8BF;
+  font-weight: bold;
 }
 
 .skills {
@@ -93,7 +97,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 20px;
 }
+
 .skills .column {
   -ms-flex: 0 0 50%%;
   flex: 0 0 50%;
@@ -123,6 +129,11 @@ ul.list-dashed > li:before {
   border-width:	5px;
   content: ' ';
   margin-right: 5px;
+}
+
+i.flag, i.flag-poland{
+  list-style-type: none;
+  padding: 0;
 }
 
 i.flag-pl:before, i.flag-poland:before {
@@ -166,6 +177,63 @@ i.flag::before {
 }
 
 
+.expirience {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.expirience .title {
+  text-transform: capitalize;
+  color: #1C9C94;
+  font-weight: bold;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.expirience .title span{
+  text-transform: none;
+  font-weight: normal;
+  color: black;
+}
+.expirience .descrition {
+  flex: 0 0 66.6%;
+  max-width: 66.6%
+}
+
+.expirience .descrition p{
+  padding-left: 1em;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.education .school {
+  text-transform: capitalize;
+  color: #1C9C94;
+  font-weight: bold;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.education .school span{
+  text-transform: none;
+  font-weight: normal;
+  color: black;
+}
+.education .descrition {
+  flex: 0 0 66.6%;
+  max-width: 66.6%
+}
+
+.education .descrition p{
+  padding-left: 1em;
+}
+
 footer {
  padding: 1em;
+ border-top: #1C9C94 solid;
 }
